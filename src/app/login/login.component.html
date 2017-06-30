@@ -1,0 +1,42 @@
+<div ng-app="login">
+<div >
+    	<div class="hd-icon">
+        	<img src="../../assets/img/login-hd-icon.png" alt="screens" />
+        </div>
+        <div class="title">
+        	<h1>login</h1>
+        </div>
+        <div class="close">
+        	<img src="../../assets/img/close.png" alt="close" (click)="closeWindow()" />
+        </div>
+    </div>
+    <div class="main">
+    	<div class="wrapper">
+        	<p align="center" class="sign-up">Quick Capture wants you to <span>Login</span> to the app!<br />
+With <span>Quick Capture Account</span> you can save your screenshots and share it with friends anytime.</p>
+              <div class="feedback small-screen">
+              		<div class="social-login">
+                    	<div class="social-btn">
+                        	<img src="../../assets/img/login-btn.png" alt="login with gmail" (click)="GPLogin()"/>
+                        </div>
+                        <div class="social-btn">
+                        	<img src="../../assets/img/fb-button.png" alt="login with fb" (click)="Fblogin()"/>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                     <p align="center" class="sign-up">Already have account? </p>
+                    <div class="feedback-form">
+
+                        <input type="email" class="input1" placeholder="Email address" [(ngModel)]="user.email"/>
+                        <input type="password" class="input1" placeholder="Password" [(ngModel)]="user.password"/>
+                        <p align="right" class="forgot-pwd">forgot password?</p>
+                    </div>
+                    <button type="button" class="btn-orange" (click)="login()">
+                        login
+                    </button>
+
+              </div>
+              <p align="center" class="sign-up">Don't have an account? <span (click)="signup()">Sign Up</span> here..</p>
+        </div>
+    </div>
+</div>

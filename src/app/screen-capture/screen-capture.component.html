@@ -1,0 +1,102 @@
+<canvas id="canvas" width="400" height="400"></canvas>
+<div class="btn-orange" (click)="uploadFile()">Done!</div>
+<ul id="toolbar-template">
+ <li class="tool" value="Circle"><img src="../../assets/img/circle.png"></li>
+ <li class="tool" value="Rectangle" ><img src="../../assets/img/rectangle.png"></li>
+ <li class="tool" value="Pencilbrush"><img src="../../assets/img/brush.png"></li>
+<li class="tool" value="Freeline"><img src="../../assets/img/pencil.png"></li>
+<li class="tool" value="Line"><img src="../../assets/img/line.png"></li>
+<li class="tool" value="Spray"><img src="../../assets/img/spray.png"></li>
+<li><input type="range" value="20" min="0" max="100" id="drawing-line-width"><li>
+<li class="tool" value="Undo"><img src="../../assets/img/undo.png"></li>
+<li class="tool" value="Redo"><img src="../../assets/img/redo.png"></li>
+<li class="tool" value="Resetall"><img src="../../assets/img/reset-all.png"></li>
+<li class="tool" value="Gallery">
+        <label class="myLabel"><img src="../../assets/img/browse-img.png"> <input type="file" id="addImage" onclick="event.stopPropagation()"></label>
+      </li>
+ <li id="stroke-pallet">
+     <img src="../../assets/img/color-picker1.png" >
+     <div class="stroke-selected-clr" id="stroke-active-clr"></div>
+        <div class="stroke-bar">
+          <div val="red" class="red-clr stroke stroke-clr" id="red">
+          </div>
+          <div val="#ff9000" class="orange-clr stroke stroke-clr" id="orange">
+          </div>
+          <div val="#ffea00" class="yellow-clr stroke stroke-clr" id="yellow">
+          </div>
+          <div val="#54ff00" class="lime-clr stroke stroke-clr" id="lime">
+          </div>
+          <div val="#06dc1a" class="green-clr stroke stroke-clr" id="green">
+          </div>
+          <div val="#06dc98" class="aqua-clr stroke stroke-clr" id="aqua">
+          </div>
+          <div val="#06d6ee" class="sky-clr stroke stroke-clr" id="sky">
+          </div>
+          <div val="#0689ee" class="blue-clr stroke stroke-clr" id="blue">
+          </div>
+          <div val="#142499" class="dark-blue-clr stroke stroke-clr" id="dark-blue">
+          </div>
+          <div val="#7806ee" class="purple-clr stroke stroke-clr" id="purple">
+          </div>
+          <div val="#c506ee" class="light-purple-clr stroke stroke-clr" id="light-purple">
+          </div>
+          <div val="#ee06a4" class="pink-clr stroke stroke-clr" id="pink">
+          </div>
+          <div val="#ee065d" class="magenta-clr stroke stroke-clr" id="magenta">
+          </div>
+          <div val="#f670a3" class="light-pink-clr stroke stroke-clr" id="light-pink">
+          </div>
+          <div val="#646464" class="light-grey-clr stroke stroke-clr" id="light-grey">
+          </div>
+          <div val="#a1a1a1" class="grey-clr stroke stroke-clr" id="grey">
+          </div>
+          <div val="#303030" class="dark-grey-clr stroke stroke-clr" id="dark-grey">
+          </div>
+          <div val="#000" class="black-clr stroke stroke-clr" id="black">
+          </div>
+        </div>
+ </li>
+ <li id="fill-pallet">
+        <img src="../../assets/img/color-picker1.png" >
+        <div class="fill-selected-clr" id="fill-active-clr"></div>
+        <div class="fill-bar">
+          <div val="red" class="red-clr fill fill-clr" id="red">
+          </div>
+          <div val="#ff9000" class="orange-clr fill fill-clr" id="orange">
+          </div>
+          <div val="#ffea00" class="yellow-clr fill fill-clr" id="yellow">
+          </div>
+          <div val="#54ff00" class="lime-clr fill fill-clr" id="lime">
+          </div>
+          <div val="#06dc1a" class="green-clr fill fill-clr" id="green">
+          </div>
+          <div val="#06dc98" class="aqua-clr fill fill-clr" id="aqua">
+          </div>
+          <div val="#06d6ee" class="sky-clr fill fill-clr" id="sky">
+          </div>
+          <div val="#0689ee" class="blue-clr fill fill-clr" id="blue">
+          </div>
+          <div val="#142499" class="dark-blue-clr fill fill-clr" id="dark-blue">
+          </div>
+          <div val="#7806ee" class="purple-clr fill fill-clr" id="purple">
+          </div>
+          <div val="#c506ee" class="light-purple-clr fill fill-clr" id="light-purple">
+          </div>
+          <div val="#ee06a4" class="pink-clr fill fill-clr" id="pink">
+          </div>
+          <div val="#ee065d" class="magenta-clr fill fill-clr" id="magenta">
+          </div>
+          <div val="#f670a3" class="light-pink-clr fill fill-clr" id="light-pink">
+          </div>
+          <div val="#646464" class="light-grey-clr fill fill-clr" id="light-grey">
+          </div>
+          <div val="#a1a1a1" class="grey-clr fill fill-clr" id="grey">
+          </div>
+          <div val="#303030" class="dark-grey-clr fill fill-clr" id="dark-grey">
+          </div>
+          <div val="#000" class="black-clr fill fill-clr" id="black">
+          </div>
+        </div>
+      </li>
+
+ </ul>

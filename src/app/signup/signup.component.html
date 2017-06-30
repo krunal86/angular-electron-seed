@@ -1,0 +1,30 @@
+<div ng-app="signup" ng-controller="SignupCtrl">
+<div>
+    	<div class="hd-icon">
+        	<img src="../../assets/img/signup-hd-icon.png" alt="screens" />
+        </div>
+        <div class="title">
+        	<h1>sign up</h1>
+        </div>
+        <div class="close">
+        	<img src="../../assets/img/close.png" alt="close"  (click)="closeWindow()"/>
+        </div>
+    </div>
+    <div class="main">
+    	<div class="wrapper">
+        	<p align="center" class="sign-up">Quick Capture want some detais to create your account!</p>
+              <div class="feedback small-screen">
+                    <div class="feedback-form">
+                        <input type="text" class="input1" placeholder="your name" [(ngModel)]="newUser.userName"/>
+                        <input type="email" class="input1" placeholder="your email address" [(ngModel)]="newUser.email"/>
+                        <input type="password" id="password" class="input1" placeholder="create password" [(ngModel)]="newUser.password"/>
+                        <input type="password" id="cnfPassword" class="input1" placeholder="confirm password" [(ngModel)]="newUser.confPassword"/>
+                    </div>
+                    <div class="btn-orange" (click)="checkSignup()">
+                        Sign up
+                    </div>
+              </div>
+              <p align="center" class="sign-up">Already have account? <span (click)="login()">Login</span> here..</p>
+        </div>
+    </div>
+</div>
